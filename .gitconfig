@@ -1,0 +1,12 @@
+[user]
+    name = Vikram Sreekanti
+    email = viksree@gmail.com
+[credential]
+    helper = osxkeychain
+[core] 
+    excludesfile = /Users/vikram/.git-user-excludes
+    editor = vim
+[color]
+    ui = true
+[push]
+    default = matching
