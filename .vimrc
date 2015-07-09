@@ -13,6 +13,9 @@ set shiftwidth=4
 " Insert spaces instead of tab character.
 set expandtab
 
+" Set text width to 80 characters.
+set tw=79
+
 " This option copies indent from current line when starting a new line.
 set autoindent
 
@@ -93,6 +96,12 @@ set guioptions-=e
 
 " Set line spacing to 3
 set lsp=3
+
+" Highlight search results
+set hlsearch
+
+" Press Space to turn off highlighting and clear any message already displayed.
+:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 """"""""""""""""""""""
 " Plug Configuration "
