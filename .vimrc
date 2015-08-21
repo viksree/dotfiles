@@ -91,9 +91,6 @@ let NERDTreeIgnore = ['\.o$']
 set splitbelow
 set splitright
 
-" Use virtual window tabs
-set guioptions-=e
-
 " Set line spacing to 3
 set lsp=3
 
