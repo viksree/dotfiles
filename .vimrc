@@ -2,13 +2,13 @@
 set nocompatible
 
 " Tab length
-set tabstop=4
+set tabstop=2
 
 " Upon <BS>, remove a tab's worth of spaces.
-set softtabstop=4
+set softtabstop=2
 
 " (Auto)indent tab length
-set shiftwidth=4
+set shiftwidth=2
 
 " Insert spaces instead of tab character.
 set expandtab
@@ -86,6 +86,7 @@ map <C-Tab> <C-W>w
 nnoremap <Leader>v :let NERDTreeQuitOnOpen = 1<bar>NERDTreeToggle<CR>
 nnoremap <Leader>V :let NERDTreeQuitOnOpen = 0<bar>NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\.o$']
+let NERDTreeMapOOpenInTab='\r'
 
 " Open vsplits to right and splits to bottom
 set splitbelow
@@ -102,8 +103,8 @@ set hlsearch
 
 """"""""""""""""""""""
 " Plug Configuration "
+" NOTE: To install new plugins, run :PlugInstall "
 """"""""""""""""""""""
-
 call plug#begin('~/.vim/plugged')
 " Ag for vim
 Plug 'rking/ag.vim'
@@ -127,7 +128,7 @@ Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
 
 " Go syntax highlighting in vim
-Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'fatih/vim-go'
 
 " Markdown syntax highlighting for vim
 Plug 'plasticboy/vim-markdown'
@@ -137,5 +138,8 @@ Plug 'derekwyatt/vim-scala'
 
 " Simplifies modifying 'surroundings'
 Plug 'tpope/vim-surround'
+
+" Elixir lang syntax highlighting for vim
+Plug 'elixir-lang/vim-elixir'
 
 call plug#end()

@@ -1,5 +1,6 @@
 # random aliases
 alias v="vagrant"
+alias gogr="cd ~/Code/ground/ground"
 
 # git aliases
 alias g="git"
@@ -12,11 +13,13 @@ alias gpl="git pull"
 alias ga="git add"
 
 # having fun with path variables
-export PATH=$PATH:~/bin:~/local/bin
-# export JAVA_HOME="$(/usr/libexec/java_home)"
-export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.1.0/libexec"
+export JAVA_HOME="$(/usr/libexec/java_home)"
 export SCALA_HOME=/usr/local/bin/scala
-export PATH=$PATH:$SCALA_HOME/bin
 export PYTHONPATH=/Library/Python/2.7/site-packages
 
+export PATH=$PATH:~/bin:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin:/Applications/Postgres.app/Contents/Versions/9.5/bin/
+export PATH=$PATH:$SCALA_HOME/bin
+
 export GOPATH="/Users/vikram/Code/go"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
