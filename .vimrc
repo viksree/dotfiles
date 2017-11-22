@@ -98,6 +98,9 @@ set lsp=3
 " Highlight search results
 set hlsearch
 
+" Disable folding in vim markdown
+let g:vim_markdown_folding_disabled = 1
+
 " Press Space to turn off highlighting and clear any message already displayed.
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
