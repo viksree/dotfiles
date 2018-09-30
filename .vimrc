@@ -38,6 +38,7 @@ let &t_Co=256
 noremap 0 ^
 
 " Set colorscheme. From w0ng/vim-hybrid.
+set background=dark
 colorscheme hybrid
 
 " Highlight HORN files as YACC files
@@ -61,7 +62,7 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 
 " Call StripTrailingWhitespaces upon saving Scala, Python, Java, C, C++, and Objective-C files.
-autocmd BufWritePre *.scala,*.py,*.java,*.c,*.h,*.m : call <SID>StripTrailingWhitespaces()
+autocmd BufWritePre *.scala,*.py,*.java,*.c,*.h,*.m,*.cpp,*.sh : call <SID>StripTrailingWhitespaces()
 
 " Airline configuration
 set laststatus=2
@@ -125,7 +126,8 @@ Plug 'godlygeek/tabular'
 Plug 'majutsushi/tagbar'
 
 " Enhanced status/tabline
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Show git diff in gutter of file
 Plug 'airblade/vim-gitgutter'

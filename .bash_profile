@@ -13,6 +13,16 @@ alias gca="git commit -a"
 alias gps="git push"
 alias gpl="git pull"
 alias ga="git add"
+alias gl="git log"
+
+# point ctags to brew's ctags
+alias ctags="/usr/local/bin/ctags"
+
+# docker aliases
+alias d="docker"
+alias drm="docker image rm"
+alias dls="docker images"
+alias dcp="docker container prune"
 
 # having fun with path variables
 export JAVA_HOME="$(/usr/libexec/java_home)"
