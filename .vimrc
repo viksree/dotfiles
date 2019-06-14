@@ -41,14 +41,11 @@ noremap 0 ^
 set background=dark
 colorscheme hybrid
 
-" Highlight HORN files as YACC files
-au BufRead,BufNewFile *.hn set filetype=yacc
-
 " set leader key to ,
 :let mapleader = ","
 
 " Strip trailing whitespace on buffer save.
-"  source: http://vimcasts.org/episodes/tidying-whitespace/
+" source: http://vimcasts.org/episodes/tidying-whitespace/
 function! <SID>StripTrailingWhitespaces()
     " Preparation: save last search, and cursor position.
     let _s=@/
@@ -110,8 +107,8 @@ let g:vim_markdown_folding_disabled = 1
 " NOTE: To install new plugins, run :PlugInstall "
 """"""""""""""""""""""
 call plug#begin('~/.vim/plugged')
-" Ag for vim
-Plug 'rking/ag.vim'
+
+" *** UTILITY PLUGINS ***
 
 "" Activate NERDTree
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -132,6 +129,14 @@ Plug 'vim-airline/vim-airline-themes'
 " Show git diff in gutter of file
 Plug 'airblade/vim-gitgutter'
 
+" Simplifies modifying 'surroundings'
+Plug 'tpope/vim-surround'
+
+" Automatically close parens, quotes, etc.
+Plug 'cohama/lexima.vim'
+
+" *** LANGUAGE-SPECIFIC PLUGINS ***
+
 " Go syntax highlighting in vim
 Plug 'fatih/vim-go'
 
@@ -141,10 +146,7 @@ Plug 'plasticboy/vim-markdown'
 " Scala syntax highlighting for vim
 Plug 'derekwyatt/vim-scala'
 
-" Simplifies modifying 'surroundings'
-Plug 'tpope/vim-surround'
-
-" Elixir lang syntax highlighting for vim
-Plug 'elixir-lang/vim-elixir'
+" Automatic pep8 indenting
+Plug 'Vimjas/vim-python-pep8-indent'
 
 call plug#end()

@@ -1,7 +1,7 @@
 # random aliases
 alias v="vagrant"
 alias gogr="cd ~/Code/ground/ground"
-alias awssh="ssh -i ~/.ssh/Vikram-rMBP.pem"
+alias awssh="ssh -i ~/.ssh/Hesse-rMBP.pem"
 alias kc="kubectl"
 
 # git aliases
@@ -30,5 +30,8 @@ export SCALA_HOME=/usr/local/bin/scala
 
 export PATH=$PATH:~/bin:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin:/Applications/Postgres.app/Contents/Versions/9.5/bin/
 export PATH=$PATH:$SCALA_HOME/bin
+
+export LIBRARY_PATH=/usr/local/lib
+export LD_LIBRARY_PATH=/usr/local/lib
 
 export GOPATH="/Users/vikram/Code/go"
